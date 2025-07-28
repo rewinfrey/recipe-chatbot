@@ -4,7 +4,15 @@ This repository contains a complete AI evaluations course built around a Recipe 
 
 ## Quick Start
 
-1. **Clone & Setup**
+1. **Clone & Setup with uv**
+   ```bash
+   git clone https://github.com/ai-evals-course/recipe-chatbot.git
+   cd recipe-chatbot
+   uv init
+   uv add -r requirements.txt
+   ```
+
+1. **Clone & Setup with pip**
    ```bash
    git clone https://github.com/ai-evals-course/recipe-chatbot.git
    cd recipe-chatbot
@@ -19,7 +27,13 @@ This repository contains a complete AI evaluations course built around a Recipe 
    # Edit .env to add your model and API keys
    ```
 
-3. **Run the Chatbot**
+3. **Run the Chatbot with uv**
+   ```bash
+   uv run uvicorn backend.main:app --reload
+   # Open http://127.0.0.1:8000
+   ```
+
+3. **Run the Chatbot without uv**
    ```bash
    uvicorn backend.main:app --reload
    # Open http://127.0.0.1:8000
@@ -48,7 +62,7 @@ This repository contains a complete AI evaluations course built around a Recipe 
 
 4. **HW4: RAG/Retrieval Evaluation** (`homeworks/hw4/`)
    - BM25 retrieval system with synthetic query generation
-   - **Interactive Walkthroughs**: 
+   - **Interactive Walkthroughs**:
      - `homeworks/hw4/hw4_walkthrough.py` (Marimo)
      - [video](https://youtu.be/GMShL5iC8aY): walkthrough of solution
 
@@ -56,7 +70,7 @@ This repository contains a complete AI evaluations course built around a Recipe 
    - Analyze conversation traces and failure patterns
    - **Interactive Walkthroughs**:
       - `homeworks/hw5/hw5_walkthrough.py` (Marimo)
-      - [video](https://youtu.be/z1oISsDUKLA) 
+      - [video](https://youtu.be/z1oISsDUKLA)
 
 ### Key Features
 
