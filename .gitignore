@@ -175,7 +175,7 @@ cython_debug/
 
 
 # Our files
-results/*
+# results/*
 
 *.pkl
 homeworks/hw4/data/RAW_recipes.csv
